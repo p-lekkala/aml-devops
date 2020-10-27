@@ -14,10 +14,10 @@ variables:
   aml_compute_target: 'cpu-cluster'
   pipeline_name: 'training-pipeline'
   dataset: 'german-credit-dataset'
-  dataset_test: 'german-credit-ci-test' # Dataset used for testing the training pipeline
+  dataset_test: 'german-credit-dataset' # Dataset used for testing the training pipeline
 
   # Azure Resource Manager connection created during pipeline creation
-  azure_service_connection_name: 'aml_accelarator_svc_conn'
+  azure_service_connection_name: 'azure-service-connection'
 
 steps:
 - task: UsePythonVersion@0
